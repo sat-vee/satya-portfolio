@@ -10,4 +10,4 @@ export function CaseSection({number,title,children}:{number:string,title:string,
 
 export function ArchitectureFlow({steps}:{steps:string[]}){return <div className="card p-6 md:p-7 smallgrid"><div className="space-y-2">{steps.map((s,i)=><div key={s}><div className={`flow-node ${i===steps.length-1?'active':''} text-sm`}>{s}</div>{i<steps.length-1&&<div className="text-center muted text-xs py-2">↓</div>}</div>)}</div></div>}
 
-export function Footer(){return <footer className="container py-9 border-t line flex flex-col md:flex-row justify-between gap-3 text-sm muted"><div><strong className="text-white">SATYVEER SINGH</strong><div className="mono text-xs mt-1">AI/ML ENGINEER · GENAI · AGENTIC AI</div></div><div>© 2026 Satyveer Singh · Built for solution engineering</div></footer>}
+export function Footer(){return <footer className="container py-9 border-t line flex flex-col md:flex-row justify-between gap-3 text-sm muted"><div><strong className="text-white">SATYVEER SINGH</strong><div className="mono text-xs mt-1">AI/ML ENGINEER · GENAI · AGENTIC AI</div></div><div>© 2026 Satyveer Singh · Enterprise AI & Automation Solutions</div></footer>}
